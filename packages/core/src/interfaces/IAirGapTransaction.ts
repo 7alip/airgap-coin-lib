@@ -1,5 +1,6 @@
 import { AeternityTransactionCursor } from '../protocols/aeternity/AeternityTypes'
 import { EthereumTransactionCursor } from '../protocols/ethereum/EthereumTypes'
+import { RskTransactionCursor } from '../protocols/rsk/RskTypes'
 import { ProtocolNetwork } from '../utils/ProtocolNetwork'
 import { ProtocolSymbols } from '../utils/ProtocolSymbols'
 
@@ -43,6 +44,7 @@ export interface IAirGapTransaction {
 
 export type IProtocolTransactionCursor =
   | EthereumTransactionCursor
+  | RskTransactionCursor
   | BitcoinTransactionCursor
   | TezosTransactionCursor
   | AeternityTransactionCursor
